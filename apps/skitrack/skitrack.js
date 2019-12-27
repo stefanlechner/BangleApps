@@ -1,19 +1,21 @@
+var lastFix = {
+    fix: 1,
+    satellites: 0
+};
+var werte = {
+    durchschnitt: 100,
+    maxSpeed: 10
+};
+
 (() => {
 
     Bangle.setGPSPower(1);
     Bangle.setLCDMode("doublebuffered");
 
-    var lastFix = {
-        fix: 1,
-        satellites: 0
-    };
-    var werte = {
-        durchschnitt: 100,
-        maxSpeed: 10
-    };
+
     setWatch(x => {
         durchschnitt = 0;
-        maxSpeed = 10;
+        maxSpeed = 0;
     }, BTN1, {repeat: true});
 
 
@@ -45,10 +47,7 @@
             g.drawString("Waiting for GPS", 120, 80);
         }
         g.flip();
-        if (BTN1.read) {
-            werte.maxSpeed = 0;
-            werte.durchschnitt = 0;
-        }
+
     }
 
     onGPS(lastFix);
