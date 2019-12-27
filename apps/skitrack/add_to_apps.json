@@ -1,0 +1,22 @@
+{
+  "id": "skitrack",
+  "name": "Skitracker",
+  "icon": "ski.png",
+  "description": "Serveral functions to track ski riding",
+  "tags": "",
+  "storage": [
+    {
+      "name": "+skitrack",
+      "url": "skitrack.json"
+    },
+    {
+      "name": "-skitrack",
+      "url": "skitrack.js"
+    },
+    {
+      "name": "*skitrack",
+      "url": "ski-icon.js",
+      "evaluate": true
+    }
+  ]
+}
