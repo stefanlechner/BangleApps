@@ -3,8 +3,8 @@ var lastFix = {
     satellites: 0
 };
 var werte = {
-    durchschnitt: 100,
-    maxSpeed: 10
+    durchschnitt: 0.0,
+    maxSpeed: 0.0
 };
 
 (() => {
