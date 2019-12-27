@@ -616,25 +616,70 @@
     "version":"0.01",
     "description": "A clock with big digits",
     "tags": "clock",
-    "type":"clock",
-    "allow_emulator":true,
+    "type": "clock",
+    "allow_emulator": true,
     "storage": [
-      {"name":"+blobclk","url":"clock-blob.json"},
-      {"name":"-blobclk","url":"clock-blob.js"},
-      {"name":"*blobclk","url":"clock-blob-icon.js","evaluate":true}
+      {
+        "name": "+blobclk",
+        "url": "clock-blob.json"
+      },
+      {
+        "name": "-blobclk",
+        "url": "clock-blob.js"
+      },
+      {
+        "name": "*blobclk",
+        "url": "clock-blob-icon.js",
+        "evaluate": true
+      }
     ]
   },
-  { "id": "berlinc",
+  {
+    "id": "berlinc",
     "name": "Berlin Clock",
     "icon": "berlin-clock.png",
     "description": "Berlin Clock (see https://en.wikipedia.org/wiki/Mengenlehreuhr)",
     "tags": "clock",
-    "type":"clock",
-    "allow_emulator":true,
+    "type": "clock",
+    "allow_emulator": true,
     "storage": [
-      {"name":"+berlinc","url":"berlin-clock.json"},
-      {"name":"-berlinc","url":"berlin-clock.js"},
-      {"name":"*berlinc","url":"berlin-clock-icon.js","evaluate":true}
+      {
+        "name": "+berlinc",
+        "url": "berlin-clock.json"
+      },
+      {
+        "name": "-berlinc",
+        "url": "berlin-clock.js"
+      },
+      {
+        "name": "*berlinc",
+        "url": "berlin-clock-icon.js",
+        "evaluate": true
+      }
+    ]
+  },
+  {
+    "id": "skitrack",
+    "name": "Skitracker",
+    "icon": "ski.png",
+    "description": "Serveral functions to track ski riding",
+    "tags": "ski,gps",
+    "type": "app",
+    "allow_emulator": true,
+    "storage": [
+      {
+        "name": "+skitrack",
+        "url": "skitrack.json"
+      },
+      {
+        "name": "-skitrack",
+        "url": "skitrack.js"
+      },
+      {
+        "name": "*skitrack",
+        "url": "ski-icon.js",
+        "evaluate": true
+      }
     ]
   }
 ]
