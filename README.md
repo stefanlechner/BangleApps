@@ -35,7 +35,7 @@ easily distinguish between file types, we use the following:
 * Create a folder called `apps/<id>`, lets assume `apps/7chname`
 * We'd recommend that you copy files from 'Example Applications' (below) as a base, or...
 * `apps/7chname/app.png` should be a 48px icon
-* Use http://www.espruino.com/Image+Converter to create `apps/7chname/app-icon.js`, using a 1 bit, 4 bit or 8 bit Web Palette "Image String"
+* Use http://www.espruino.com/Image+Converter to create `apps/7chname/ski-icon.js`, using a 1 bit, 4 bit or 8 bit Web Palette "Image String"
 * Create an entry in `apps/7chname/app.json` as follows:
 
 ```
@@ -59,7 +59,7 @@ See `app.json /  widget.json` below for more info on the correct format.
   "storage": [
     {"name":"+7chname","url":"app.json"},
     {"name":"-7chname","url":"app.js"},
-    {"name":"*7chname","url":"app-icon.js","evaluate":true}
+    {"name":"*7chname","url":"ski-icon.js","evaluate":true}
   ],
 },
 ```
@@ -87,7 +87,7 @@ You can add the following to the Espruino Web IDE:
 var appname = "mygreat";
 
 require("Storage").write('*'+appname,
-  // place app-icon.js contents here
+  // place ski-icon.js contents here
 );
 
 //
@@ -121,11 +121,11 @@ Apps are listed in the Bangle.js menu, accessible from a clock app via the middl
 
 * `add_to_apps.json` - insert into `apps.json`, describes the widget to bootloader and loader
 * `app.png` - app icon - 48x48px
-* `app-icon.js` - JS version of the icon (made with http://www.espruino.com/Image+Converter) for use in Bangle.js's menu
+* `ski-icon.js` - JS version of the icon (made with http://www.espruino.com/Image+Converter) for use in Bangle.js's menu
 * `app.json` - short app name for Bangle.js menu and storage filenames
 * `app.js` - app code
 
-#### `app-icon.js`
+#### `ski-icon.js`
 
 The icon image and short description is used in the menu entry as selection posibility.
 

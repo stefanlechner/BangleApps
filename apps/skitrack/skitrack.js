@@ -14,8 +14,8 @@ var werte = {
 
 
     setWatch(x => {
-        durchschnitt = 0;
-        maxSpeed = 0;
+        werte.durchschnitt = 0.0;
+        werte.maxSpeed = 0.0;
     }, BTN1, {repeat: true});
 
 
